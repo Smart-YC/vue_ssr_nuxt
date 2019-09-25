@@ -1,22 +1,28 @@
 <template>
   <div>
-    <el-menu router :default-active="this.$route.path" class="el-menu-demo" mode="horizontal" active-text-color="#fff">
-      <el-menu-item index="/relation"><span slot="title">联系</span></el-menu-item>
-      <el-menu-item index="/about"><span slot="title">关于</span></el-menu-item>
-      <el-menu-item index="/news"><span slot="title">新闻</span></el-menu-item>
-      <el-menu-item index="/product"><span slot="title">产品</span></el-menu-item>
-      <el-menu-item index="/main"><span slot="title">
-        <nuxt-link :to="{name:'index'}">首页</nuxt-link></span>
+    <el-menu :default-active="activeItem" class="el-menu-demo" mode="horizontal" active-text-color="#fff">
+      <el-menu-item index="5"><span slot="title"><a href="#relation">联系</a></span></el-menu-item>
+      <el-menu-item index="4"><span slot="title"><a href="#about">关于</a></span></el-menu-item>
+      <el-menu-item index="3"><span slot="title"><a href="#news">新闻</a></span></el-menu-item>
+      <el-menu-item index="2"><span slot="title"><a href="#product">产品</a></span></el-menu-item>
+      <el-menu-item index="1"><span slot="title"><a href="#main">首页</a></span>
       </el-menu-item>
     </el-menu>
   </div>
 </template>
 <script>
-  export default {}
+  export default {
+    data() {
+      return {
+        activeItem: '1'
+      }
+    }
+  }
 </script>
 <style scoped>
   a{
     text-decoration: none;
+    vertical-align: baseline;
   }
   .el-menu {
     background-color: #E6E7E9;
