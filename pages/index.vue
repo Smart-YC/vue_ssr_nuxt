@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <div class="nav">
-        <header >
+        <header>
           <div class="logo">LOGO</div>
           <Header/>
         </header>
@@ -32,28 +32,28 @@
                 <el-button size="medium" class="black-btn">MORE</el-button>
               </el-row>
               <el-row :gutter="20" class="goods">
-                <el-col :span="6">
+                <el-col :xs="24" :sm="6">
                   <div class="text-center">
                     <img src="../assets/3.png" alt="">
                     <h3>衣架</h3>
                     <p>其他</p>
                   </div>
                 </el-col>
-                <el-col :span="6">
+                <el-col :xs="24" :sm="6">
                   <div class="text-center">
                     <img src="../assets/4.png" alt="">
                     <h3>吊灯</h3>
                     <p>其他</p>
                   </div>
                 </el-col>
-                <el-col :span="6">
+                <el-col :xs="24" :sm="6">
                   <div class="text-center">
                     <img src="../assets/5.png" alt="">
                     <h3>台灯</h3>
                     <p>其他</p>
                   </div>
                 </el-col>
-                <el-col :span="6">
+                <el-col :xs="24" :sm="6">
                   <div class="text-center">
                     <img src="../assets/6.png" alt="">
                     <h3>凳子</h3>
@@ -176,7 +176,7 @@
 </script>
 
 <style>
-  .nav{
+  .nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -185,6 +185,7 @@
     box-sizing: border-box;
     background-color: #E6E7E9;
   }
+
   header {
     margin: 0 auto;
     display: flex;
@@ -199,9 +200,13 @@
     display: inline-block;
   }
 
+  h1,h3 {
+    font-weight: 400
+  }
+
   h4 {
     color: #47494e;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 30px;
   }
@@ -291,7 +296,7 @@
   .superiority {
     position: absolute;
     top: 300px;
-    left: 15%;
+    left: 24%;
     width: 100%;
   }
 

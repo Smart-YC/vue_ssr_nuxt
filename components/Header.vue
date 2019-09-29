@@ -1,11 +1,11 @@
 <template>
   <div>
     <el-menu :default-active="activeItem" class="el-menu-demo" mode="horizontal" active-text-color="#fff">
-      <el-menu-item index="5"><span slot="title"><a href="#relation">联系</a></span></el-menu-item>
-      <el-menu-item index="4"><span slot="title"><a href="#about">关于</a></span></el-menu-item>
-      <el-menu-item index="3"><span slot="title"><a href="#news">新闻</a></span></el-menu-item>
-      <el-menu-item index="2"><span slot="title"><a href="#product">产品</a></span></el-menu-item>
-      <el-menu-item index="1"><span slot="title"><a href="#main">首页</a></span>
+      <el-menu-item index="5"><a href="#relation">联系</a></el-menu-item>
+      <el-menu-item index="4"><a href="#about">关于</a></el-menu-item>
+      <el-menu-item index="3"><a href="#news">新闻</a></el-menu-item>
+      <el-menu-item index="2"><a href="#product">产品</a></el-menu-item>
+      <el-menu-item index="1"><a href="#main">首页</a>
       </el-menu-item>
     </el-menu>
   </div>
@@ -40,13 +40,13 @@
     border-bottom: none;
   }
 
-  .el-menu.el-menu--horizontal > .el-menu-item > span {
-    padding: 2px 10px;
+  .el-menu.el-menu--horizontal > .el-menu-item > a {
+    padding: 5px 20px;
   }
 
-  .el-menu.el-menu--horizontal > .el-menu-item.is-active > span {
+  .el-menu.el-menu--horizontal > .el-menu-item.is-active > a {
     background: #000;
-    padding: 2px 10px;
+    padding: 5px 20px;
   }
 
   .el-menu--horizontal > .el-menu-item {
